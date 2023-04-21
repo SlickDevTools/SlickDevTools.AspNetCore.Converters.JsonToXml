@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>10</LangVersion>
+        <Title>SlickDevTools.AspNetCore.Converters.JsonToXml</Title>
+        <Description>This library provides a service to convert JSON data to XML format using C#. The main class JsonToXmlConverterService allows you to convert JSON strings to XML strings.</Description>
+        <Copyright>2023 SlickDevTools.com</Copyright>
+        <Company>SlickDevTools.com</Company>
+        <AssemblyVersion>1.1.3</AssemblyVersion>
+        <FileVersion>1.1.3</FileVersion>
+        <SignAssembly>true</SignAssembly>
+        <RepositoryUrl>https://github.com/SlickDevTools/JsonToXmlSdk</RepositoryUrl>
+        <RepositoryType>Public</RepositoryType>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <Version>1.1.3</Version>
+        <PackageId>SlickDevTools.AspNetCore.Converters.JsonToXml</PackageId>
+        <Authors>SlickDevTools.com</Authors>
+        <Product>SlickDevTools.AspNetCore.Converters</Product>
+        <PackageIcon>slickdevtools-color.png</PackageIcon>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\net7.0\JsonToXmlSdk.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\Release\net7.0\JsonToXmlSdk.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <None Include="README.md" Pack="true" PackagePath="\" />
+        <None Update="slickdevtools-color.png">
+          <Pack>True</Pack>
+          <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
+
+</Project>
