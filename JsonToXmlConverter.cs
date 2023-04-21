@@ -18,7 +18,9 @@ internal class JsonToXmlConverter
         JObject jObject = JObject.Parse(json);
         
         XmlDocument xmlDocument = new XmlDocument();
-        XmlElement rootNode = xmlDocument.CreateElement(rootElementName);
+        // the caller can leave the rootElement name as empty quotes so intervene 
+        var rootName = string.IsNullOrWhiteSpace(rootElementName) ? "root" : rootElementName;
+        XmlElement rootNode = xmlDocument.CreateElement(rootName); 
         xmlDocument.AppendChild(rootNode);
         
         AddJobjectToXmlDocument(jObject, rootNode, xmlDocument);
