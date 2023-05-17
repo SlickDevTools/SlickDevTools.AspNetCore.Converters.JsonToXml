@@ -4,12 +4,12 @@ using Newtonsoft.Json.Linq;
 
 namespace SlickDevTools.AspNetCore.Converters.JsonToXml;
 /// <summary>
-///     Convert JSON to XML
+///     Convert a JSON string to an XML string with a specified root element name by recursively adding the JSON object and its properties to an XML document
 /// </summary>
 internal class JsonToXmlConverter
 {
     /// <summary>
-    ///     Convert JSON to XML
+    ///     Convert a JSON string to an XML string with a specified root element name
     /// </summary>
     /// <param name="json"></param>
     /// <returns></returns>
