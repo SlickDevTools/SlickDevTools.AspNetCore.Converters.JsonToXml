@@ -7,15 +7,16 @@
         <LangVersion>12</LangVersion>
         <Title>SlickDevTools.AspNetCore.Converters.JsonToXml</Title>
         <Description>This library provides a service to convert JSON data to XML format using C#. The main class JsonToXmlConverterService allows you to convert JSON strings to XML strings.</Description>
-        <Copyright>2023 SlickDevTools.com</Copyright>
+        <Copyright>2024 SlickDevTools.com</Copyright>
         <Company>SlickDevTools.com</Company>
         <AssemblyVersion>1.1.6</AssemblyVersion>
         <FileVersion>1.1.6</FileVersion>
         <SignAssembly>true</SignAssembly>
         <RepositoryUrl>https://github.com/SlickDevTools/JsonToXmlSdk</RepositoryUrl>
         <RepositoryType>Public</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-        <Version>1.1.5</Version>
+        <Version>1.1.6</Version>
         <PackageId>SlickDevTools.AspNetCore.Converters.JsonToXml</PackageId>
         <Authors>SlickDevTools.com</Authors>
         <Product>SlickDevTools.AspNetCore.Converters</Product>

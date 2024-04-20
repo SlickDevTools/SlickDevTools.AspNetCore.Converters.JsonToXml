@@ -11,6 +11,8 @@ allows you to convert JSON strings to XML strings.
 
 ## Usage
 
+### Basic instantiation and conversion
+
 1. Instantiate `JsonToXmlConverterService` class:
 
 ```csharp
@@ -28,6 +30,35 @@ JsonToXmlConverterResult result = converterService.Convert(json);
 
 ```csharp
 string xml = result.Xml;
+```
+
+### Alternate instantiation and conversion with options
+
+1. Instantiate `JsonToXmlConverterService` class with options:
+
+```csharp
+// json string for a product
+string json = @"{
+    ""id"": 1,
+    ""name"": ""Product 1"",
+    ""price"": 100
+}";
+        
+// create an instance of the json to xml serializer with options that sets the root element name to "product"
+var service = new JsonToXmlConverterService(new JsonToXmlConverterOptions { RootElementName = "product" });
+```
+
+2. Convert JSON to XML:
+
+```csharp
+var result = service.Convert(json);
+```
+
+3. Access the converted XML string:
+
+```csharp
+// output the xml
+var xmlString = result.Xml;
 ```
 
 ## Classes
